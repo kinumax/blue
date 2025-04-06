@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    
+    /* ブルーベリーカラーパレット */
+    --blueberry-deep: 267 60% 40%;      /* 深いブルーベリー色 */
+    --blueberry-medium: 260 50% 55%;    /* 中間のブルーベリー色 */
+    --blueberry-light: 255 40% 70%;     /* 明るいブルーベリー色 */
+    --blueberry-pale: 250 30% 85%;      /* 淡いブルーベリー色 */
+    --blueberry-accent: 280 70% 65%;    /* アクセントカラー（鮮やかな紫） */
+    --blueberry-accent-light: 290 60% 80%; /* 明るいアクセントカラー */
+    
+    /* ANASUIスタイルの補色 */
+    --anasui-pink: 330 80% 85%;         /* 淡いピンク */
+    --anasui-yellow: 45 90% 85%;        /* 淡い黄色 */
+    --anasui-mint: 160 40% 85%;         /* 淡いミント */
+    
+    /* システムカラー */
+    --sidebar-background: var(--blueberry-pale);
+    --sidebar-foreground: var(--blueberry-deep);
+    --sidebar-primary: var(--blueberry-medium);
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: var(--blueberry-light);
+    --sidebar-accent-foreground: var(--blueberry-deep);
+    --sidebar-border: var(--blueberry-pale);
+    --sidebar-ring: var(--blueberry-accent);
+    
+    --background: 0 0% 100%;
+    --foreground: 267 50% 25%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 267 50% 25%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 267 50% 25%;
+    
+    --primary: var(--blueberry-medium);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: var(--blueberry-pale);
+    --secondary-foreground: var(--blueberry-deep);
+    
+    --muted: 250 30% 95%;
+    --muted-foreground: 267 30% 45%;
+    
+    --accent: var(--anasui-pink);
+    --accent-foreground: 267 50% 25%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 250 30% 90%;
+    --input: 250 30% 90%;
+    --ring: var(--blueberry-medium);
+    
+    --chart-1: var(--blueberry-deep);
+    --chart-2: var(--blueberry-medium);
+    --chart-3: var(--blueberry-light);
+    --chart-4: var(--anasui-pink);
+    --chart-5: var(--anasui-yellow);
+  }
+  
+  .dark {
+    --sidebar-background: 267 30% 15%;
+    --sidebar-foreground: 250 30% 90%;
+    --sidebar-primary: var(--blueberry-medium);
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 267 20% 25%;
+    --sidebar-accent-foreground: 250 30% 90%;
+    --sidebar-border: 267 20% 25%;
+    --sidebar-ring: var(--blueberry-accent);
+    
+    --background: 267 30% 10%;
+    --foreground: 250 30% 90%;
+    
+    --card: 267 30% 15%;
+    --card-foreground: 250 30% 90%;
+    
+    --popover: 267 30% 15%;
+    --popover-foreground: 250 30% 90%;
+    
+    --primary: var(--blueberry-medium);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 267 20% 25%;
+    --secondary-foreground: 250 30% 90%;
+    
+    --muted: 267 20% 25%;
+    --muted-foreground: 267 10% 70%;
+    
+    --accent: var(--blueberry-accent);
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 267 20% 25%;
+    --input: 267 20% 25%;
+    --ring: var(--blueberry-accent);
+    
+    --chart-1: var(--blueberry-medium);
+    --chart-2: var(--blueberry-light);
+    --chart-3: var(--blueberry-accent);
+    --chart-4: var(--anasui-pink);
+    --chart-5: var(--anasui-yellow);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ANASUIスタイルのカスタムコンポーネント */
+@layer components {
+  .anasui-button {
+    @apply rounded-full px-6 py-2 font-medium transition-all duration-300 shadow-md hover:shadow-lg;
+  }
+  
+  .anasui-button-primary {
+    @apply anasui-button bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .anasui-button-secondary {
+    @apply anasui-button bg-secondary text-secondary-foreground hover:bg-secondary/90;
+  }
+  
+  .anasui-button-accent {
+    @apply anasui-button bg-accent text-accent-foreground hover:bg-accent/90;
+  }
+  
+  .anasui-card {
+    @apply rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-md;
+  }
+  
+  .anasui-input {
+    @apply rounded-full border border-input bg-background px-4 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+  
+  .anasui-badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+  }
+  
+  .anasui-badge-primary {
+    @apply anasui-badge bg-primary/20 text-primary;
+  }
+  
+  .anasui-badge-secondary {
+    @apply anasui-badge bg-secondary text-secondary-foreground;
+  }
+  
+  .anasui-badge-accent {
+    @apply anasui-badge bg-accent/20 text-accent-foreground;
+  }
+}

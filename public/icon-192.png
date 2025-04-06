@@ -1,0 +1,25 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景円 -->
+  <circle cx="256" cy="256" r="256" fill="#FFFFFF"/>
+  
+  <!-- ブルーベリーの本体 -->
+  <circle cx="256" cy="256" r="200" fill="#6d4e9c"/>
+  
+  <!-- ブルーベリーのハイライト部分 -->
+  <circle cx="200" cy="200" r="140" fill="#8a6cb5"/>
+  
+  <!-- ブルーベリーの葉 -->
+  <path d="M256 100C256 100 220 120 200 130C180 140 170 150 180 170C190 190 220 180 240 170C260 160 280 140 280 120C280 100 256 100 256 100Z" fill="#4CAF50"/>
+  
+  <!-- ブルーベリーの茎 -->
+  <rect x="250" y="80" width="12" height="40" fill="#8D6E63"/>
+  
+  <!-- ブルーベリーの光沢 -->
+  <circle cx="200" cy="180" r="20" fill="#FFFFFF" fill-opacity="0.3"/>
+  <circle cx="230" cy="220" r="15" fill="#FFFFFF" fill-opacity="0.2"/>
+  <circle cx="270" cy="190" r="10" fill="#FFFFFF" fill-opacity="0.2"/>
+  
+  <!-- ANASUIスタイルの装飾 -->
+  <circle cx="256" cy="256" r="180" stroke="#f8c8e0" stroke-width="5" stroke-dasharray="10 5" fill="none"/>
+</svg>

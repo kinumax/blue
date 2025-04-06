@@ -1,0 +1,25 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景円 -->
+  <circle cx="96" cy="96" r="96" fill="#FFFFFF"/>
+  
+  <!-- ブルーベリーの本体 -->
+  <circle cx="96" cy="96" r="75" fill="#6d4e9c"/>
+  
+  <!-- ブルーベリーのハイライト部分 -->
+  <circle cx="75" cy="75" r="52.5" fill="#8a6cb5"/>
+  
+  <!-- ブルーベリーの葉 -->
+  <path d="M96 37.5C96 37.5 82.5 45 75 48.75C67.5 52.5 63.75 56.25 67.5 63.75C71.25 71.25 82.5 67.5 90 63.75C97.5 60 105 52.5 105 45C105 37.5 96 37.5 96 37.5Z" fill="#4CAF50"/>
+  
+  <!-- ブルーベリーの茎 -->
+  <rect x="93.75" y="30" width="4.5" height="15" fill="#8D6E63"/>
+  
+  <!-- ブルーベリーの光沢 -->
+  <circle cx="75" cy="67.5" r="7.5" fill="#FFFFFF" fill-opacity="0.3"/>
+  <circle cx="86.25" cy="82.5" r="5.625" fill="#FFFFFF" fill-opacity="0.2"/>
+  <circle cx="101.25" cy="71.25" r="3.75" fill="#FFFFFF" fill-opacity="0.2"/>
+  
+  <!-- ANASUIスタイルの装飾 -->
+  <circle cx="96" cy="96" r="67.5" stroke="#f8c8e0" stroke-width="1.875" stroke-dasharray="3.75 1.875" fill="none"/>
+</svg>
